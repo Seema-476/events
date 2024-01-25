@@ -8,8 +8,16 @@
     text-decoration: none !important;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 .bg-image {
     background-image: url(../images/group-image.png);
+    margin-top: -2px;
 }
 
 .events {
@@ -97,7 +105,7 @@
     color: #000;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 48px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -115,6 +123,7 @@
     left: 0;
     top: 0;
     background: #2C49FE;
+    z-index: -1;
 }
 
 .upperline::after {
@@ -125,6 +134,7 @@
     right: 17%;
     top: 0;
     background: #01C8FF;
+    z-index: -1;
 }
 
 .card-heading {
@@ -138,7 +148,7 @@
 }
 
 .date {
-    color: #000;
+    color: #666666;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -263,7 +273,7 @@
     label[for="iconbox"]>span {
         width: 100%;
         height: 4px;
-        background: #9a7b7b;
+        background: #fff;
     }
 
     .menulist {
@@ -274,7 +284,7 @@
         justify-content: center;
         flex-direction: column;
         position: fixed;
-        background: #1f1c1c;
+        background: #000;
         top: 0;
         right: -100%;
         transition: all 200ms linear;
@@ -296,8 +306,19 @@
 }
 
 @media(min-width:320px) {
+    /* .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    } */
+    /* .col-sm-12 {
+             width: 100%;
+             padding-left: 12px;
+             padding-right: 12px;
+         } */
+
     .heading-2 {
-        font-size: 33px;
+        font-size: 24px;
     }
 
     .events {
@@ -315,7 +336,7 @@
 
 @media(min-width:576px) {
     .heading-2 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .events {
@@ -328,5 +349,11 @@
 
     .heading {
         font-size: 64px;
+    }
+}
+
+@media(min-width:768px) {
+    .heading-2 {
+        font-size: 48px;
     }
 }
